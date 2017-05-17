@@ -3,6 +3,8 @@ Manage Action Lists as a MindMap
 This application allows to manage set of information lists that can be organised in a master-detail TreeWiew.
 Written in Python 2.7 with PyGTK 2.0, it runs on Linux and Windows.
 
+![Screenshot](PA_screenshot.jpg)
+
 # My goal...
 * Share a tool that can be used for a lot of purposes
 * Allow to save time managing projects or activities
