@@ -3,7 +3,7 @@ Manage Action Lists as a MindMap
 This application allows to manage set of information lists that can be organised in a master-detail TreeWiew.
 Written in Python 2.7 with PyGTK 2.0, it runs on Linux and Windows.
 
-![Screenshot](PA_screenshot.jpg)
+![](https://github.com/neoremi/TreeViewActionManagment/blob/master/screenshot/PA_screenshot.png)
 
 # My goal...
 * Share a tool that can be used for a lot of purposes
@@ -30,3 +30,8 @@ I have design this application primary with MS Excel and used it to manage :
 * manage multi record organisation (multi dimension TreeWiew)
 * manage modification authorisations and sub-action plan delegation and merging
 * ...
+
+Additionnal screenshots :
+* Setting application :
+
+![](https://github.com/neoremi/TreeViewActionManagment/blob/master/screenshot/PAParams_screenshot.png)
