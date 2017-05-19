@@ -15,6 +15,9 @@ import gtk, gobject
 #from string import strip
 import ConfigParser #manage init files
 
+import os.path
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 app_win = None
 #app_win.curPA           current file index in the list of open files
 #app_win.maxPA           index of the last open file
@@ -27,7 +30,7 @@ app_win = None
 #app_win.FileOpen[curpa].Store.tree_store    tree store containing data of the loaded file
 #app_win.FileOpen[curpa].PAFile              loeaded file name
 
-icon_file = "/usr/share/pixmaps/RHE.png"
+icon_file = "../img/RHE.png"
 
 actions = gtk.ActionGroup("General")
 
