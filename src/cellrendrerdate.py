@@ -1,12 +1,22 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python
-
-# There is no CellRenderer for entering a date via gtk.Calendar, we have to create own custom widget based on gtk.CellRendererText.
-# Usually the CellRenderer creates onw gtk.Editable and returns it at the end of do_start_editing() method.
-# This editable is then drawn inside the cell being edited and has to fit within it - which is not possible for a calendar (because of its size).
-# We have to bypass all this "editable machinery", create own popup window (based on decoration-less, non-modal gtk.Dialog),
-# properly position it (very tricky) below the cell being edited and handle the date entering.
-# Being non-modal allows us to handle the focus-out event as cancel editing (user just clicks away from the calendar).
+#
+# Copyright 2017 Régis Hégo
+#
+# This file is part of Pascal.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, see <http://www.gnu.org/licenses/>.
 
 import gtk, gobject
 import datetime
